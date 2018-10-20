@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from 'axios';
 import { Grid, Row, Col } from 'react-bootstrap';
+import SideBar from './SideBar';
 
 export default class MainContent extends Component {
 
@@ -74,7 +75,7 @@ export default class MainContent extends Component {
             <Grid>
                 <Row className="show-grid">
                     <Col id="Map-container" sm={12}><div id="map" /></Col>
-                    <Col id="Sidebar-container" sm={6}>Hello container two</Col>
+                    <Col id="Sidebar-container" sm={6}><SideBar id="sideBar" {...this.state} /></Col>
                 </Row>
             </Grid>
         </div>

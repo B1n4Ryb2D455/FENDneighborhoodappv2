@@ -4,9 +4,9 @@ import './App.css';
 import Header from './Header';
 import MainContent from './MainContent';
 
-// tutorial https://www.youtube.com/watch?v=QxzkxCwruo8
-// tutorial https://youtu.be/lDVaZY0aG2w
-// tutorial https://youtu.be/ywdxLNjhBYw
+// https://www.youtube.com/watch?v=QxzkxCwruo8
+// https://youtu.be/lDVaZY0aG2w
+// https://youtu.be/ywdxLNjhBYw
 
 class App extends Component {
 	render() {
