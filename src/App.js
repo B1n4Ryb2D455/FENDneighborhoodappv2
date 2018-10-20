@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import Footer from './Footer';
 import './App.css';
 
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<header className="App-header">
+				<div className="App-header">
 					<h2>Kennedy Space Center Neighborhood Fun Finder!</h2>
-				</header>
+				</div>
 					<div id="Main-content">
 						<Grid>
 							<Row className="show-grid">
-								<Col id="Map-container" lg={12}>Hello container one</Col>
-								<Col id="Sidebar-container" lg={6}>Hello container two</Col>
+								<Col id="Map-container" sm={12}>Hello container more words one</Col>
+								<Col id="Sidebar-container" sm={6}>Hello container two</Col>
 							</Row>
 						</Grid>
 					</div>
-					<footer className="App-footer">
-					<a className="App-link" href="https://www.linkedin.com/in/sarajoblevins/" target="_blank" rel="noopener noreferrer">Connect with Sara on LinkedIn</a>
-					</footer>
+				<Footer />
 			</div>
 		);
 	}

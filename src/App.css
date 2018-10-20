@@ -38,11 +38,18 @@
 }
 
 .show-grid.row {
-	display: flex;
+    display: flex;
+    flex-flow: inherit;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
 }
 
 #Main-content {
-	box-sizing: content-box;
+  box-sizing: content-box;
+
 }
 
 #Map-container {
