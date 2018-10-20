@@ -53,8 +53,8 @@ export default class MainContent extends Component {
 
         const infowindow = new window.google.maps.InfoWindow();
 
-        this.state.venues.map((eachVenue) => {
-            const contentString = `${eachVenue.venue.name}` + " these are words";
+        this.state.venues.forEach((eachVenue) => {
+            const contentString = `${eachVenue.venue.name}`;
 
             const marker = new window.google.maps.Marker({
                 position: { lat: eachVenue.venue.location.lat, lng: eachVenue.venue.location.lng },
