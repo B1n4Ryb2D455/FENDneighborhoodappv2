@@ -9,7 +9,7 @@
 
 .App-header {
 	background-color: #282c34;
-	min-height: 5vh;
+	min-height: 3vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -22,6 +22,10 @@
 	background-color: #282c34;
 	min-height: 5vh;
 	display: flex;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -34,17 +38,21 @@
 }
 
 .show-grid.row {
-  display: flex;
+	display: flex;
 }
 
-.Map-container
-{
-
+#Main-content {
+	box-sizing: content-box;
 }
 
-.Sidebar-container
-{
+#Map-container {
+	width: 75%;
+	height: 100%;
+}
 
+#Sidebar-container {
+	width: 25%;
+	height: 100%;
 }
 
 @keyframes App-logo-spin {

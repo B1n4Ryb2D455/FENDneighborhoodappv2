@@ -8,20 +8,16 @@ class App extends Component {
 		return (
 			<div className="App">
 				<header className="App-header">
-					<h1>Kennedy Space Center Neighborhood Fun Finder!</h1>
+					<h2>Kennedy Space Center Neighborhood Fun Finder!</h2>
 				</header>
-					<p>
+					<div id="Main-content">
 						<Grid>
 							<Row className="show-grid">
-								<Col id="Map-container" xs={12} md={8}>
-									Hello container one
-								</Col>
-								<Col id="Sidebar-container" xs={6} md={4}>
-									Hello container two
-								</Col>
+								<Col id="Map-container" lg={12}>Hello container one</Col>
+								<Col id="Sidebar-container" lg={6}>Hello container two</Col>
 							</Row>
 						</Grid>
-					</p>
+					</div>
 					<footer className="App-footer">
 					<a className="App-link" href="https://www.linkedin.com/in/sarajoblevins/" target="_blank" rel="noopener noreferrer">Connect with Sara on LinkedIn</a>
 					</footer>
