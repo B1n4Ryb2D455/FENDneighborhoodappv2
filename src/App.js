@@ -13,11 +13,11 @@ class App extends Component {
 					<p>
 						<Grid>
 							<Row className="show-grid">
-								<Col xs={12} md={8}>
-									<code>{'<Col xs={12} md={8} />'}</code>
+								<Col id="Map-container" xs={12} md={8}>
+									Hello container one
 								</Col>
-								<Col xs={6} md={4}>
-									<code>{'<Col xs={6} md={4} />'}</code>
+								<Col id="Sidebar-container" xs={6} md={4}>
+									Hello container two
 								</Col>
 							</Row>
 						</Grid>
