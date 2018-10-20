@@ -8,7 +8,8 @@ class App extends Component {
 		return (
 			<div className="App">
 				<header className="App-header">
-					<img src={logo} className="App-logo" alt="logo" />
+					<h1>Kennedy Space Center Neighborhood Fun Finder!</h1>
+				</header>
 					<p>
 						<Grid>
 							<Row className="show-grid">
@@ -21,10 +22,9 @@ class App extends Component {
 							</Row>
 						</Grid>
 					</p>
-					<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-						Learn React
-					</a>
-				</header>
+					<footer className="App-footer">
+					<a className="App-link" href="https://www.linkedin.com/in/sarajoblevins/" target="_blank" rel="noopener noreferrer">Connect with Sara on LinkedIn</a>
+					</footer>
 			</div>
 		);
 	}
