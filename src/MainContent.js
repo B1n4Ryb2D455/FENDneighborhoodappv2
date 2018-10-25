@@ -48,7 +48,7 @@ export default class MainContent extends Component {
     initMap = () => {
         const map = new window.google.maps.Map(document.getElementById('map'), {
             center: { lat: 28.5728722, lng: -80.6489808 },
-            zoom: 10
+            zoom: 11
         });
 
         const infowindow = new window.google.maps.InfoWindow();
@@ -56,10 +56,11 @@ export default class MainContent extends Component {
         this.state.venues.forEach((eachVenue) => {
             const contentString = `${eachVenue.venue.name}`;
 
-            const marker = new window.google.maps.Marker({
+            let marker = new window.google.maps.Marker({
                 position: { lat: eachVenue.venue.location.lat, lng: eachVenue.venue.location.lng },
                 map: map,
-                title: eachVenue.venue.name
+                title: eachVenue.venue.name,
+                animation: window.google.maps.Animation.DROP
             });
 
             marker.addListener('click', function () {
@@ -75,7 +76,7 @@ export default class MainContent extends Component {
             <Grid>
                 <Row className="show-grid">
                     <Col id="Map-container" sm={12}><div id="map" /></Col>
-                    <Col id="Sidebar-container" sm={6}><SideBar id="sideBar" {...this.state} /></Col>
+                    <Col id="Sidebar-container" sm={6}><SideBar id="sideBar" {...this.state}     /></Col>
                 </Row>
             </Grid>
         </div>
