@@ -54,7 +54,8 @@ export default class MainContent extends Component {
         const infowindow = new window.google.maps.InfoWindow();
 
         this.state.venues.forEach((eachVenue) => {
-            const contentString = `${eachVenue.venue.name}`;
+            const contentString = `${eachVenue.venue.name}` + `${eachVenue.venue.location.formattedAddress}`;
+            console.log(contentString);
 
             let marker = new window.google.maps.Marker({
                 position: { lat: eachVenue.venue.location.lat, lng: eachVenue.venue.location.lng },
@@ -75,8 +76,8 @@ export default class MainContent extends Component {
         return <div id="Main-content">
             <Grid>
                 <Row className="show-grid">
-                    <Col id="Map-container" sm={12}><div id="map" /></Col>
-                    <Col id="Sidebar-container" sm={6}><SideBar id="sideBar" {...this.state}     /></Col>
+                    <Col id="Map-container" sm={12}><div id="map" /> </Col>
+                    <Col id="Sidebar-container" sm={6}><SideBar id="sideBar" {...this.state} /></Col>
                 </Row>
             </Grid>
         </div>
@@ -92,3 +93,4 @@ export default class MainContent extends Component {
     script.defer = true;
     index.parentNode.insertBefore(script, index);
 }
+

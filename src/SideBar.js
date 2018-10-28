@@ -1,12 +1,23 @@
 import React, { Component } from "react";
-import VenueList from "./VenueList";
+
 
 export default class SideBar extends Component {
+
     render() {
+
+        const listVenues = [
+            { name: "mylist", capital: "someword" },
+        ]
+
         return (
             <div className="sideBar">
-                <input type={"search"} id={"search"} placeholder={"Filter Venues"} />
-                <VenueList {...this.props} />
+                <ol>
+                    {listVenues.map(venue => (
+                        <li>
+                            Capital of {venue.name} is {venue.capital}
+                        </li>
+                    ))}
+                </ol>
             </div>
         );
     }
